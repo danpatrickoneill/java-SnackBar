@@ -26,9 +26,10 @@ public class Customer
 	{
 		this.cash += cash;
 	}
-	public void purchaseSnack(Snack snack, int quantity)
+	public String purchaseSnack(Snack snack, int quantity)
 	{
 		this.cash -= snack.buySnacks(quantity);
+		return this.name + String.format(" bought %d ", quantity) + snack.getName() + "s"; 
 	}
 	public String getName()
 	{

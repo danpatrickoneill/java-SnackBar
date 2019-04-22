@@ -22,42 +22,42 @@ public class Main{
 		// Let's see some data
 		System.out.println("*** Query Data");
 
-		System.out.printf("%s has $%f%n", jane.getName(), jane.getCash());
+		System.out.printf("%s has $%.2f%n", jane.getName(), jane.getCash());
 		System.out.printf("There are %d %ss left%n", soda.getQuantity(), soda.getName());
-		jane.purchaseSnack(soda, 3);
-		System.out.printf("%s has $%f%n", jane.getName(), jane.getCash());
+		System.out.println(jane.purchaseSnack(soda, 3));
+		System.out.printf("%s has $%.2f%n", jane.getName(), jane.getCash());
 		System.out.printf("There are %d %ss left%n", soda.getQuantity(), soda.getName());
 
-		System.out.printf("%s has $%f%n", jane.getName(), jane.getCash());
+		System.out.printf("%s has $%.2f%n", jane.getName(), jane.getCash());
 		System.out.printf("There are %d %ss left%n", pretzel.getQuantity(), pretzel.getName());
-		jane.purchaseSnack(pretzel, 1);
-		System.out.printf("%s has $%f%n", jane.getName(), jane.getCash());
+		System.out.println(jane.purchaseSnack(pretzel, 1));
+		System.out.printf("%s has $%.2f%n", jane.getName(), jane.getCash());
 		System.out.printf("There are %d %ss left%n", pretzel.getQuantity(), pretzel.getName());
 
-		System.out.printf("%s has $%f%n", bob.getName(), bob.getCash());
+		System.out.printf("%s has $%.2f%n", bob.getName(), bob.getCash());
 		System.out.printf("There are %d %ss left%n", soda.getQuantity(), soda.getName());
-		bob.purchaseSnack(soda, 2);
-		System.out.printf("%s has $%f%n", bob.getName(), bob.getCash());
+		System.out.println(bob.purchaseSnack(soda, 2));
+		System.out.printf("%s has $%.2f%n", bob.getName(), bob.getCash());
 		System.out.printf("There are %d %ss left%n", soda.getQuantity(), soda.getName());
 
-		System.out.printf("%s has $%f%n", jane.getName(), jane.getCash());
+		System.out.printf("%s has $%.2f%n", jane.getName(), jane.getCash());
 		jane.addCash(10.00);
-		System.out.printf("%s has $%f%n", jane.getName(), jane.getCash());
+		System.out.printf("%s has $%.2f%n", jane.getName(), jane.getCash());
 
-		System.out.printf("%s has $%f%n", jane.getName(), jane.getCash());
+		System.out.printf("%s has $%.2f%n", jane.getName(), jane.getCash());
 		System.out.printf("There are %d %ss left%n", choco.getQuantity(), choco.getName());
-		jane.purchaseSnack(choco, 1);
-		System.out.printf("%s has $%f%n", jane.getName(), jane.getCash());
+		System.out.println(jane.purchaseSnack(choco, 1));
+		System.out.printf("%s has $%.2f%n", jane.getName(), jane.getCash());
 		System.out.printf("There are %d %ss left%n", choco.getQuantity(), choco.getName());
 
 		System.out.printf("There are %d %ss left%n", pretzel.getQuantity(), pretzel.getName());
 		pretzel.addQuantity(12);
 		System.out.printf("There are %d %ss left%n", pretzel.getQuantity(), pretzel.getName());
 
-		System.out.printf("%s has $%f%n", bob.getName(), bob.getCash());
+		System.out.printf("%s has $%.2f%n", bob.getName(), bob.getCash());
 		System.out.printf("There are %d %ss left%n", pretzel.getQuantity(), pretzel.getName());
-		bob.purchaseSnack(pretzel, 3);
-		System.out.printf("%s has $%f%n", bob.getName(), bob.getCash());
+		System.out.println(bob.purchaseSnack(pretzel, 3));
+		System.out.printf("%s has $%.2f%n", bob.getName(), bob.getCash());
 		System.out.printf("There are %d %ss left%n", pretzel.getQuantity(), pretzel.getName());
 
 		System.out.println(chips.getName());
