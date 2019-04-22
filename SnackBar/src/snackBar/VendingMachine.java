@@ -33,8 +33,7 @@ public class VendingMachine
 	{
 		this.name = name;
 	}
-	
-		@Override
+	@Override
 	public String toString()
 	{
 		String rtnStr = id + name;

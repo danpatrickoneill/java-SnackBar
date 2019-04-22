@@ -3,10 +3,10 @@ package snackBar;
 public class Customer
 {
 	// fields
-	public static int maxId = 0;
-	public int id;
-	public String name;
-	public double cash;
+	private static int maxId = 0;
+	private int id;
+	private String name;
+	private double cash;
 
 	// constructor
 	public Customer(String name, double cash)
