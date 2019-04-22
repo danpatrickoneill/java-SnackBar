@@ -26,7 +26,7 @@ public class Customer
 	{
 		this.cash += cash;
 	}
-	public void purchaseSnacks(Snack snack, int quantity)
+	public void purchaseSnack(Snack snack, int quantity)
 	{
 		this.cash -= snack.buySnacks(quantity);
 	}

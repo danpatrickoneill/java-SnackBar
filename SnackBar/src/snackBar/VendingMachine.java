@@ -1,10 +1,10 @@
-package snackBar
+package snackBar;
 
 public class VendingMachine
 {
 	// fields
 	private static int maxId = 0;
-	private int id
+	private int id;
 	private String name;
 
 	// constructor
@@ -13,7 +13,7 @@ public class VendingMachine
 		maxId++;
 		id = maxId;
 
-		this.name = name
+		this.name = name;
 	}
 
 	// methods
@@ -25,11 +25,11 @@ public class VendingMachine
 	{
 		this.id = id;
 	}
-	public void getName()
+	public String getName()
 	{
 		return name;
 	}
-	public String setName(String name)
+	public void setName(String name)
 	{
 		this.name = name;
 	}

@@ -8,7 +8,7 @@ public class Snack
 	private String name;
 	private int quantity;
 	private double cost;
-	private int vendingMachineId
+	private int vendingMachineId;
 
 	// constructor
 	public Snack(String name, int quantity, double cost, int vendingMachineId)
@@ -46,7 +46,7 @@ public class Snack
 	{
 		return cost;
 	}
-	public void setCost(double, cost)
+	public void setCost(double cost)
 	{
 		this.cost = cost;
 	}
@@ -54,7 +54,7 @@ public class Snack
 	{
 		return vendingMachineId;
 	}
-	public void setVendingMachineId(int, vendingMachineId)
+	public void setVendingMachineId(int vendingMachineId)
 	{
 		this.vendingMachineId = vendingMachineId;
 	}
@@ -71,7 +71,7 @@ public class Snack
 		quantity -= purchaseQuantity;
 		return purchaseQuantity * cost;
 	}
-	public double getTotalCost(int quantity)
+	public double getTotalCost()
 	{
 		return quantity * cost;
 	}
@@ -79,7 +79,7 @@ public class Snack
 	@Override
 	public String toString()
 	{
-		String rtnStr = id + name + quantity + cost + vendingMachineId;
+		String rtnStr = "Name: " + name + "Quantity: " + quantity + "Cost: " + cost + "VMId: " + vendingMachineId;
 
 		return rtnStr;
 	}
